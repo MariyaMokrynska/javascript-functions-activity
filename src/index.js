@@ -3,11 +3,13 @@ function divides(num1, num2) {
 }
 
 // Convert the above function to arrow function
-
+const dividers = (num1, num2) => num1 % num2 === 0;
+console.log(dividers(10, 5));
 
 
 // Write a function that converts Fahrenheit to Celsius
-
+const convertFtoC = (fahrenheit) => (fahrenheit-32)/1.8;
+console.log(convertFtoC(100));
 
 
 
@@ -20,6 +22,19 @@ function divides(num1, num2) {
 //             if numbers[i]+numbers[j] == target:
 //                 total += 1
 //     return total
+
+const pairs_with_given_sum = function(numbers, target){
+  let total = 0;
+  for(let i = 0; i <numbers.length-1; i++){
+    for(let j = i+1; j <numbers.length; j++){
+        if (numbers[i]+numbers[j] === target){
+          total += 1;
+        }
+    }
+  }
+  return total;
+}
+console.log(pairs_with_given_sum([1, 2, 4], 3));
 
 
 // Using the setInterval function (described below), register a callback function to be called every second.
