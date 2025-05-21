@@ -48,3 +48,6 @@ console.log(pairs_with_given_sum([1, 2, 4], 3));
 // Check out the MDN documentation for setInterval (and setTimeout) for additional details
 
 // add your call here
+setInterval(() => {
+  console.log("1 second passed");
+}, 1000);
